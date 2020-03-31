@@ -2,7 +2,7 @@ require "pry"
 def reverse_each_word(str)
   ss=[]
   array = str.split(" ")
-  array.collect do |word|
+  array.each do |word|
       ss << word.reverse
       binding.pry
   end
